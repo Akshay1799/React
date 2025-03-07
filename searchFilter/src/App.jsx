@@ -38,6 +38,11 @@ function SearchFilter() {
     setSearchInput(''); // clears the input fiels after clicking on the search button
   }
 
+  const handleReset = ()=>{
+    setSearchInput('');
+    setSearchQuery('');
+  }
+
   // to filter the search query
   const filteredItem = items.filter((item) =>
     // to check if item contains the search query 
@@ -57,6 +62,7 @@ function SearchFilter() {
 
          {/* runs handleSearch when we click on the button */}
       <button type="button" onClick={handleSearch}>search</button>
+      <button type="button" onClick={handleReset}>reset</button>
       <ul>
       {/* loops through the items and creates the li */}
         {filteredItem.length > 0 ?
