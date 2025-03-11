@@ -54,7 +54,7 @@ function SearchFilter() {
       <h1>Find your products</h1>
       <br />
 
-      <input style={{ padding: '12px', color: 'white' }}
+      <input style={{ padding: '12px', color: 'white', borderRadius: '5px'}}
         type="text"
         placeholder='find your product'
         value={searchInput}
