@@ -9,7 +9,7 @@ const FilterNumber = () => {
     return (
         <>
             <div>
-                <p>Filtered numbers are: </p>
+                <p>Filtered even numbers are: </p>
                 {numbers.filter((data)=>(data % 2 == 0 + '')).join(' ')}
             </div >
         </>
