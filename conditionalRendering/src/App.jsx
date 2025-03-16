@@ -6,6 +6,7 @@ import Toggle from './Components/Toggle'
 import Greeting from './Components/Greeting'
 import TaskList from './Components/TaskList'
 import FilterNumber from './Components/FilterNumber'
+import TaskManager from './Components/TaskManager'
 
 function App() {
   
@@ -14,8 +15,9 @@ function App() {
       <>
        <Toggle/>
       <Greeting/>
-      <TaskList/>
-      <FilterNumber/>
+      {/* <TaskList/> */}
+      {/* <FilterNumber/> */}
+      <TaskManager/>
       </>
   )
 }
