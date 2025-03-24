@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import FetchApi from './files/One'
 import Form from './files/Form'
+import Multi_input_handling from './files/Multi_input_handling'
 
 function App() {
   
@@ -10,7 +11,8 @@ function App() {
   return (
     <>
       {/* <FetchApi/> */}
-      <Form/>
+      {/* <Form/> */}
+      <Multi_input_handling/>
     </>
   )
 }
