@@ -8,6 +8,7 @@ import Toggle from './Components/Toggle'
 import ToggleTheme from './Components/ToggleTheme'
 import MenuCard from './Components/MenuCard'
 import BusinessCard from './Components/BusinessCard'
+import BookList from './Components/BookList'
 
 function App() {
   
@@ -19,7 +20,8 @@ function App() {
       {/* <Toggle/> */}
       {/* <ToggleTheme/> */}
       {/* <MenuCard/> */}
-      <BusinessCard/>
+      {/* <BusinessCard/> */}
+      <BookList/>
     </>
   )
 }
