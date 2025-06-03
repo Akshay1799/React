@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react'
+import axios from 'axios'
 
 const Users = () => {
 
@@ -6,11 +7,23 @@ const Users = () => {
 
   useEffect(() => {
 
+    // Fetching data using fetch
+
+    // const apiData = async () => {
+    //   const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    //   const data = await response.json()
+    //   setUser(data);
+    //   console.log(data);
+    //   console.log(data.length);
+    // }
+
+    // Fetching data using axios
+
     const apiData = async () => {
-      const response = await fetch('https://jsonplaceholder.typicode.com/users')
-      const data = await response.json()
-      setUser(data);
-      console.log(data);
+      const response = await axios.get('https://jsonplaceholder.typicode.com/users')
+      setUser(response.data);
+      console.log(response.data);
+      console.log(response.data.length);
     }
     apiData();
   }, [])
