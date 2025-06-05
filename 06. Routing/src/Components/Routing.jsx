@@ -6,8 +6,8 @@ import Contact from '../Pages/Contact'
 import About from '../Pages/About'
 import Multi_Input_Form from '../../../05. Form/src/Components/Multi_Input_Form'
 import Users from '../../../04. UseEffect/Components/Users'
-import bookList from '../../../01. JSX/src/Components/BookList'
 import BookList from '../../../01. JSX/src/Components/BookList'
+import Product from '../Pages/Product'
 
 
 const Routing = () => {
@@ -22,6 +22,8 @@ const Routing = () => {
             <Route path='/users' element={<Users/>}/>
             <Route path='/form' element={<Multi_Input_Form/>}/>
             <Route path='/books' element={<BookList/>}/>
+            <Route path='/cars' element={<Product/>}/>
+            <Route path='/cars/:brandId' element={<Product/>}/>
         </Routes>
     </Router>
     </>
