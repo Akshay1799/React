@@ -1,8 +1,15 @@
 import React from 'react'
-
+import { useNavigate } from 'react-router-dom';
 const About = () => {
+    const navigate = useNavigate();
+
+    const handleClick = ()=>{
+            navigate('/');
+    }
     return (
         <>
+            <button onClick={handleClick}>click me move to home page</button>
+
             <div>Welcome to About Page</div>
             <div style={{width:400, backgroundColor:'pink', color:'black'}}>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.

@@ -5,9 +5,11 @@ import About from './Components/About'
 import Home from './Components/Home'
 import Contact from './Components/Contact'
 import Navbar from './Components/Navbar'
+import Email from './Components/email'
+import Linkedin from './Components/Linkedin'
+import NotFound from './Components/NotFound'
 
 // Better and preferred way of doing routing
-
 
 function App() {
   const router = createBrowserRouter([
@@ -30,8 +32,24 @@ function App() {
       element: <div>
         <Navbar />
         <Contact />
-      </div>
+      </div>,
+      children: [
+        {
+          path: 'email',
+          element: <Email/>
+        },
+        {
+          path: 'linkedin',
+          element: <Linkedin/>
+        }
+      ]
+
     },
+    {
+      path:'*',
+      element: <NotFound/>
+
+    }
   ])
 
   return (
