@@ -17,11 +17,11 @@ function App() {
     <>
       {/* <JSX/> */}
       {/* <FruitList/> */}
-      {/* <Toggle/> */}
+      <Toggle/>
       {/* <ToggleTheme/> */}
       {/* <MenuCard/> */}
       {/* <BusinessCard/> */}
-      <BookList/>
+      {/* <BookList/> */}
     </>
   )
 }
