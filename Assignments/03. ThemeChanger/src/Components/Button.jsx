@@ -1,6 +1,4 @@
-//Button.jsx
-import React from 'react'
-import ThemeContext from '../Contexts/ThemeContext.JS';
+import ThemeContext from '../Contexts/ThemeContext';
 import { useContext } from 'react';
 
 const Button = () => {
