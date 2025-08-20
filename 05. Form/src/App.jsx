@@ -4,6 +4,7 @@
 import './App.css'
 import Form from './Components/Form'
 import Multi_Input_Form from './Components/Multi_Input_Form'
+import ReactForm from './Components/ReactForm'
 
 
 function App() {
@@ -13,8 +14,8 @@ function App() {
     <>
 
       {/* <Form/> */}
-      <Multi_Input_Form/>
-      
+      {/* <Multi_Input_Form/> */}
+      <ReactForm/>
     </>
   )
 }
