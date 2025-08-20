@@ -7,8 +7,9 @@ const ReactForm = () => {
         register, 
         handleSubmit,
          watch, 
-         formState:{errors}
-    } = useForm();
+         formState:{errors},
+         
+    } = useForm({mode: 'onChange'});
 
     const [tableData, setTableData] = useState([]);
 
